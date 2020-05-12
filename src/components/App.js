@@ -32,7 +32,7 @@ class App extends Component {
 // }
 
 handleChange(event) {
-  fetch(`http://hn.algolia.com/api/v1/search?query=${this.state.userInput}`)
+  fetch(`https://hn.algolia.com/api/v1/search?query=${this.state.userInput}`)
   .then(response => response.json())
   .then(response => {
       // console.log(response)
